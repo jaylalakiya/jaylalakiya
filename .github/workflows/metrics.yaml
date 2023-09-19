@@ -2,6 +2,8 @@ name: Metrics
 on:
   # Schedule daily updates
   schedule: [{cron: "0 0 * * *"}]
+  # Trigger manually using github browser
+  workflow_dispatch:
 jobs:
   github-metrics:
     runs-on: ubuntu-latest
